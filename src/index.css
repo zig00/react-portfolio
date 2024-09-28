@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Plus Jakarta Sans";
+}
+
+#root {
+    width: 100%;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------------header fixed  */
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+/* ---------------------------------------------------------------header styles */
+header {
+    width: 100%;
+    background: #fff;
+    padding: 18px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.Headerlogo {
+    display: flex;
+    align-items: center;
+}
+
+.Headerlogo p {
+    margin-left: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+header button {
+    padding: 18px 25px;
+    width: max-content;
+    height: max-content;
+    border: 1px solid #5E3BEE;
+    color: #5E3BEE;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-transition: ease-out 0.6s;
+    -moz-transition: ease-out 0.6s;
+    transition: ease-out 0.6s;
+}
+.btnslide:hover {
+    box-shadow: inset 400px 0 0 0 #5E3BEE;
+    color: #fff;
+  }
+  
+header a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav li {
+    list-style-type: none;
+    color: #2c2c2c;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+nav li:hover {
+    cursor: pointer;
+    animation: linkshover 0.6s;
+    color: #5E3BEE;
+}
+
+@keyframes linkshover {
+    0% {
+       opacity: 1;
+       color: #2c2c2c;
+    }
+
+    10% {
+        opacity: 0.8;
+        color: #2c2c2c;
+
+    }
+
+    20% {
+        opacity: 0.6;
+        color: #2c2c2c;
+    }
+
+    30% {
+        opacity: 0.4;
+        color: #2c2c2c;
+    }
+
+    40% {
+        opacity: 0.2;
+        color: #2c2c2c;
+    }
+
+    50% {
+       opacity: 0;
+       color: #5E3BEE;
+    }
+
+    60% {
+        opacity: 0.2;
+        color: #5E3BEE;
+    }
+
+    70% {
+        opacity: 0.4;
+        color: #5E3BEE;
+    }
+
+    80% {
+        opacity: 0.6;
+        color: #5E3BEE;
+    }
+
+    90% {
+        opacity: 0.8;
+        color: #5E3BEE;
+    }
+
+    100% {
+       opacity: 1;
+       color: #5E3BEE;
+    }
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------------------------------welcome section */
+.welcomesection {
+    width: 100%;
+    background: #F5FCFF;
+    box-sizing: border-box;
+}
+
+.topshadow {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(#f2f2f2, #fff);
+    display: flex;
+}
+
+.welcomesection-inner {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 132px 100px;
+    box-sizing: border-box;
+}
+
+.welcomesection-inner .left {
+    width: 100%;
+    max-width: 580px;
+}
+
+.welcomesection-inner .left p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.welcomesection-inner .left h1 {
+    margin-top: 10px;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.welcomesection-inner .left h1 span {
+    color: #5E3BEE;
+}
+
+.welcomesection-inner .left h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-top: 15px;
+}
+.welcomesection-inner .right{
+    width: 100%;
+    max-width: 650px;
+}
+.welcomesection-inner .right img {
+   width: 100%;
+}
+
+/* ------------------------------------------------------------------------skills */
+.skills {
+    margin-top: 55px;
+    padding: 135px 0;
+    width: 100%;
+    max-width: 1366px;
+    box-sizing: border-box;
+}
+
+.skills .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-st {
+    font-weight: 400;
+    font-size: 17px;
+    color: #5E3BEE;
+    text-transform: uppercase;
+}
+
+.title-bt {
+    font-size: 58px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.skills-inner {
+    display: -webkit-inline-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: scroll;
+    margin-top: 70px;
+    max-height: 400px;
+    width: 100%;
+    padding-bottom: 70px;
+    user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5E3BEE;
+    width: 9px;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5f3beec4;
+}
+
+.skills-inner p {
+    font-size: 18px;
+    color: #2c2c2c;
+}
+
+.skillcol {
+    width: 100%;
+    max-width: 365px;
+    background: #cae0eb59;
+    padding: 20px 35px;
+    min-height: 250px;
+    box-shadow: 0px 10px 20px 0px rgba(12, 15, 48, 0.05);
+    border-radius: 15px;
+    border-bottom: 4px solid transparent;
+    cursor: grab;
+}
+
+.skillcol img {
+    width: 55px;
+    filter: brightness(70%);
+}
+
+.skillcol h1 {
+    margin-top: 12px;
+    color: #2c2c2c;
+}
+
+.skillcol p {
+    margin-top: 7px;
+    color: #2c2c2ca2;
+}
+
+.skillcol:hover {
+    border-bottom: 4px solid #5E3BEE;
+    transition: 0.3s all ease-in;
+    cursor: grab !important;
+}
+
+/* ------------------------------------------------------------------------about */
+
+
+.about .left {
+    display: flex;
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .left img {
+    width: 500px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 17%;
+    filter: drop-shadow(0 0 0.75rem #2c2c2c);
+}
+
+.about {
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    flex-direction: column;
+    
+}
+.about-inner{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .right {
+    margin-left: 60px;
+}
+
+.aboutme-info {
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+/* -------------------------------------------------------------------------portfolio */
+
+.portfolio-main{
+    margin-top: 120px;
+    padding: 80px 0;
+    width: 85%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.portfolio-inner{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    display: -webkit-inline-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    user-select: none;
+    padding-bottom: 50px;
+}
+.portfolio-inner img{
+    user-select: none;
+}
+.pproject-item{
+    position: relative;
+}
+.pproject-item .pshadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000046;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.pproject-item p{
+    z-index: 2;
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* -------------------------------------------------------------------------------footer */
+.footer{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+    background: #F5FCFF;
+    justify-content: center;
+    margin-top: 120px;
+}
+.footer-inner{
+    width: 100%;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 105px;
+}
+.social-links{
+    gap: 10px;
+    font-size: 22px;
+    justify-content: space-between;
+    display: flex;
+}
+.footer-bottom{
+    margin-top: 105px;
+    padding-top: 45px;
+    border-top: 1px solid #282938;
+}
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 105px;
+}
+.footer-bottom ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    list-style-type: none;
+    width: 100%;
+}
+/* ---------------------------------------------------------------------------------------responsive */
+@media screen and (max-width:1366px){
+    .welcomesection-inner{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .welcomesection-inner .left h1 {
+        font-weight: 50px;
+    }
+    .skills{
+        padding: 70px 50px;
+    }
+    .about{
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    .portfolio-main{
+        padding-top: 0;
+        width: 95%;
+    }
+    .footer {
+        margin-top: 70px;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+    .footer-top{
+        padding-top: 70px;
+    }
+    .footer-bottom{
+        padding-bottom: 70px;
+        margin-top: 70px;
+    }
+
+
+}
+@media screen and (max-width:1152px)
+{
+    .welcomesection-inner .left h1{
+        font-size: 46px;
+    }
+    .about .left {
+        width: 350px;
+    }
+    .about .left img{
+        width: 350px;
+    }
+    .aboutme-info{
+        font-size: 16px;
+    }
+    .title-bt{
+        font-size: 48px;
+    }
+    .aboutme-info{
+        margin-top: 20px;
+    }
+    .skills-inner{
+        margin-top: 40px;
+    }
+
+}
+@media screen and (max-width: 970px){
+    .about-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .left{
+        width: 100%;
+        max-width: 450px;
+    }
+    .about .left img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
