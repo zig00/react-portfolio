@@ -1,7 +1,6 @@
 import React from 'react'
 import Headerlogo from "../Icons/Headerlogo.png"
-import { useState, useEffect } from "react";
-import ReactDOM from "react-dom/client";
+import { useEffect } from "react";
 import GBCV from '../Files/MYNEWCV.pdf'
 function Header() {
 
@@ -29,7 +28,7 @@ function Header() {
                     <li>About me</li>
                     <li>Contact</li>
                 </nav>
-                <a href={GBCV} download="GBCV" target='_blank'>
+                <a href={GBCV} download="GBCV" >
                     <button className='btnslide'>Download my CV</button>
                 </a>
 
