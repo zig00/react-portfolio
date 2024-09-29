@@ -11,7 +11,7 @@ function welcome() {
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h4>
             </div>
             <div className='right'>
-              <img src={myimg}></img>
+              <img src={myimg} alt=""></img>
             </div>
         </div>
     </div>
