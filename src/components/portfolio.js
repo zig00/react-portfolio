@@ -47,7 +47,7 @@ function Portfolio() {
     const portfolioprojects = _projects.map((pproject) => 
         <div className='pproject-item' key={pproject.id} >
             <p>{pproject.name}</p>
-            <img src={pproject.image}></img>
+            <img src={pproject.image} alt=""></img>
             <div className='pshadow'></div>
         </div>
     )
