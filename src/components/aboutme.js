@@ -7,7 +7,7 @@ function aboutme() {
       <h1 className='title-bt'>About me</h1>
       <div className='about-inner'>
         <div className='left'>
-          <img src={myimage}></img>
+          <img src={myimage} alt=""></img>
         </div>
         <div className='right'>
           <h4 className='aboutme-info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus
