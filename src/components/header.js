@@ -20,7 +20,7 @@ function Header() {
         <header className='header-section'>
             <div className='header-inner'>
                 <div className='Headerlogo'>
-                    <img src={Headerlogo} alt-""></img>
+                    <img src={Headerlogo} alt=""></img>
                     <p>Giorgi</p>
                 </div>
                 <nav>
