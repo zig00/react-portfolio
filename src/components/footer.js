@@ -7,7 +7,7 @@ function footer() {
             <div className='footer-inner'>
                 <div className='footer-top'>
                     <div className='Headerlogo'>
-                        <img src={Headerlogo}></img>
+                        <img src={Headerlogo} alt=""></img>
                         <p>Giorgi</p>
                     </div>
                     <nav>
