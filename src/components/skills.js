@@ -40,7 +40,7 @@ function Skills() {
 
     const listSkills = _skills.map((myListSkills) =>
         <div className='skillcol' key={myListSkills.id} >
-            <img src={myListSkills.image}></img>
+            <img src={myListSkills.image} alt=""></img>
             <h1>{myListSkills.name}</h1>
             <p>{myListSkills.desc}</p>
         </div>
